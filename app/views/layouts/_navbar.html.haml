@@ -8,7 +8,7 @@
         %li.nav-item
           %a.nav-link.active{"aria-current" => "page", href: "#"} Home
         %li.nav-item
-          %a.nav-link{href: "#"} Link
+          = link_to 'Courses', courses_path, class: "nav-link"
         %li.nav-item.dropdown
           %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "data-bs-toggle" => "dropdown", href: "#", role: "button"}
             Dropdown

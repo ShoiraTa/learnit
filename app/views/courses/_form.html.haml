@@ -5,7 +5,8 @@
 
   .form-inputs
     = f.input :title
-    = f.input :description
+    =f.label :description
+    = f.rich_text_area :description
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, class: 'btn btn-primary btn-sm mt-2'

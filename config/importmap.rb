@@ -15,3 +15,5 @@ pin "bootstrap", to: "https://ga.jspm.io/npm:bootstrap@5.2.0/dist/js/bootstrap.e
 pin "@popperjs/core", to: "https://unpkg.com/@popperjs/core@2.11.5/dist/esm/index.js"
 pin "jqtree", to: "https://ga.jspm.io/npm:jqtree@1.6.2/lib/tree.jquery.js"
 pin "jquery-ui-dist", to: "https://ga.jspm.io/npm:jquery-ui-dist@1.13.1/jquery-ui.js"
+pin "trix"
+pin "@rails/actiontext", to: "actiontext.js"

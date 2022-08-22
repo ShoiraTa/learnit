@@ -10,3 +10,5 @@ import 'jquery_ujs';
 //= require_tree .
 //= require_self
 Turbo.session.drive = false;
+import 'trix';
+import '@rails/actiontext';

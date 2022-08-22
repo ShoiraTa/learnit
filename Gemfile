@@ -16,7 +16,7 @@ gem "bootsnap", require: false
 
 # added gems
 gem "bootsnap", require: false
-# gem "haml-rails", "~> 2.0"
+gem "haml-rails", "~> 2.0"
 gem 'faker'
 gem "devise", github: "heartcombo/devise", branch: "main"
 gem 'friendly_id', '~> 5.4.0'
@@ -24,7 +24,7 @@ gem 'pagy', '~> 5.10'
 gem "jquery-rails"
 gem 'bootstrap', '~> 5.1.3'
 gem "sassc-rails" 
-
+gem 'simple_form'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title
+      = content_for?(:title) ? yield(:title) : 'SelfDev'
+    %meta{content: "width=device-width,initial-scale=1", name: "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    %script{crossorigin: "anonymous", src: "https://kit.fontawesome.com/36c60608a5.js"}
+    = javascript_importmap_tags
+    %link{href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+  %body
+    %script{crossorigin: "anonymous", integrity: "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", src: "https://code.jquery.com/jquery-3.5.1.slim.min.js"}
+    %script{crossorigin: "anonymous", integrity: "sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx", src: "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"}
+    .container
+      = render 'layouts/navbar'
+      .row
+        .col-md-12
+          %p
+          = yield
+          %br/
+%html
+  %script{src: "https://code.jquery.com/jquery-3.6.0.js"}
+  %script{src: "https://code.jquery.com/ui/1.13.2/jquery-ui.js"}

@@ -1,6 +1,6 @@
-# Procject Name goe here
+# Project Name goes here
 
-- Procject ecription
+- Project description
 
 ## Live preview
 
